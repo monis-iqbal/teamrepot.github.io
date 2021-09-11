@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team create</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <h1><b>Welcome</b></h1>
+    <button style="background-color: cornflowerblue;" id="logoutbtn" ><a href="./index.html">logout</a></button>
+    <fieldset style="height : 550px;"><legend>team</legend>
+        <div id="teamsown"><h2 style="text-decoration-line: underline;" >teams you own &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h2> <a href="./index6.html" class="setting_btn">settings</a><br><br>
+        <div id="newTeam"></div></div>
+        <hr>
+        <div id="teamspartof"><h2 style="text-decoration-line: underline;">teams you are part of</h2> 
+            <div id="other_team"><p>developer(programmer)</p>
+            <p>team owner : abc@xyz.com</p>
+            </div>
+            <a href="./index3.html" class="setting_btn">Daily Report</a>
+        </div>
+        
+        <button style="background-color: rgb(86, 86, 252);" onclick="createNewTeam()"><b>Create a Team</b></button>
+
+       
+    </fieldset >
+     <div id="createteam_none"><h2 ><b>Create a Team</b></h2>
+        <br>
+        <input type="text" id="team_name" placeholder="Team Name" size="30">
+        <br><br>
+
+        <select name="catergories" id="category" >
+        <option value="Programmer" selected="selected">Programmer</option>
+        <option value="engineer">engineer</option>
+        <option value="management">management</option>
+        </select>
+        <br><br>
+
+        <input type="text" id="create_member_email" placeholder="member (type email)"  size="30"><br><br>
+
+        <button style="background-color: cornflowerblue;" class="button" id="create_btn" onclick="createTeam()"><b>Create</b></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button style="background-color: rgb(230, 65, 65);" class="button" onclick="hiddenBtn()" id="cancel_btn"><b>Cancel</b></button>
+        </div>
+        
+    <script src="./app.js"></script>
+</body>
+</html>
